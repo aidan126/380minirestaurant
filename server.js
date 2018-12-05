@@ -1,8 +1,6 @@
 "use strict";
 
 // Imports dependencies and set up http server
-const http = require("http");
-
 const request = require("request"),
   express = require("express"),
   body_parser = require("body-parser"),
@@ -10,7 +8,7 @@ const request = require("request"),
   app = express(),
   session = require("express-session"),
   upload = multer(), //for parsing multipart/form-data
-  port = process.env.PORT || 5000;
+  port = process.env.PORT || 1337;
 
 // create application/json parser
 const jsonParser = body_parser.json();
